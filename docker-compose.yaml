@@ -1,0 +1,20 @@
+version: "3"
+services:
+  golang:
+    image: gavin/golang:1.13-rc
+    container_name: golang-1.13-rc
+    hostname: golang-1.13-rc
+    privileged: true
+    #ports:
+    #  - 631:631
+    volumes:
+            - /home/gavin/workspace/go-src/src/:/go/src
+    #environment:
+    #   CUPSADMIN: admin
+    #   CUPSPASSWORD: pass
+    #   TZ: UTC
+    restart: unless-stopped
+    
+    build:
+      context: .
+      dockerfile: Dockerfile
