@@ -1,6 +1,6 @@
-FROM golang:1.8
+FROM golang:1.13-rc
 
-RUN apt-get update && apt-get install -y tzdata debconf
+RUN apt-get update && apt-get install -y tzdata
 
 # time zone
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \

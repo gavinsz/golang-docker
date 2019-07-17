@@ -1,9 +1,9 @@
 version: "3"
 services:
   golang:
-    image: gavin/golang:1.8
-    container_name: golang-1.8
-    hostname: golang-1.8
+    image: gavin/golang:1.13-rc
+    container_name: golang-1.13-rc
+    hostname: golang-1.13-rc
     privileged: true
     #ports:
     #  - 631:631
