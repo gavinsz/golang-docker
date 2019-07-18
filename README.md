@@ -1,4 +1,9 @@
 # golang-docker
 golang:1.13-rc
 
-docker run -it --rm -v /home/gavin/workspace/go-src/src/:/go/src golang:1.13-rc /bin/bash
+# how to build docker image
+docker-compose build
+
+# how to run it
+docker-compose up -d
+
