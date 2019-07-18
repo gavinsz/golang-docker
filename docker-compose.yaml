@@ -14,7 +14,8 @@ services:
     #   CUPSPASSWORD: pass
     #   TZ: UTC
     restart: unless-stopped
-    
+    entrypoint: tail -f /etc/passwd
+
     build:
       context: .
       dockerfile: Dockerfile
